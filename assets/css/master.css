@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
 
 /* LAYOUTS */
@@ -15,7 +14,45 @@
   width: 40%;
 }
 
+.raw {
+  width: 100%;
+  margin: 20px -15px;
+}
+
+.raw:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class^="clm-"] {
+  float: left;
+  text-align: center;
+}
+
+.clm-33 {
+  width: calc(100% / 3);
+  padding: 0 15px;
+}
+
+.clm-50 {
+  width: calc(100% / 2);
+  padding: 0 15px;
+}
+
+.ln-h {
+  line-height: 150px;
+}
+
+
 /* LAYOUTS */
+
+/* TIPOGRAPHY */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* TIPOGRAPHY */
 
 /* HEADER */
 
@@ -25,7 +62,7 @@ header {
   background-image: url(../img/jumbo.png);
   background-size: 1000px 400px;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: 110% 100%;
 }
 
 .text-container {
@@ -103,9 +140,91 @@ ul.right-nav li {
 
 
 /*  TEXT */
-.text {
+.jumbo-text {
   color: rgb(255, 255, 255);
   font-size: 55px;
   margin-bottom: 30px;
 }
+
+/* p {
+  color: rgb(128, 128, 128);
+  padding-bottom: 20px;
+} */
+
 /* TEXT */
+
+
+/* MAIN */
+
+/* UPPER SECTION MAIN */
+.bg-grey {
+  background-color: rgb(211, 211, 211);
+  height: 150px;
+}
+
+.main-head {
+  text-align: center;
+  padding-top: 40px;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+/* UPPER SECTION MAIN */
+
+/* CENTER SECTION MAIN */
+
+.img-center-main {
+  height: 150px;
+}
+
+.title-clm {
+  color: rgb(124, 187, 2);
+  font-size: 25px;
+}
+
+.hr-clm {
+  width: 100px;
+  margin: 30px auto;
+}
+
+.main-divison {
+  margin: 20px auto;
+}
+/* CENTER SECTION MAIN */
+
+
+/* MAIN */
+
+
+/* FOOTER */
+
+
+
+.ft-container {
+  padding-top: 60px;
+  color: rgb(128, 128, 128);
+}
+
+.text-ft {
+  display: inline;
+  margin-right: 20px;
+}
+
+.choice {
+  border-bottom: 2px solid rgb(128, 128, 128);
+  margin-right: 30px;
+}
+
+.choice:after {
+  content: "\25BC";
+  padding-left: 35px;
+}
+
+.help {
+  position: fixed;
+  bottom: -15px;
+  right: 20%;
+  z-index: 1;
+}
+ /* FOOTER */
